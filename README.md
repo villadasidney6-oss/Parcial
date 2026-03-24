@@ -163,41 +163,75 @@ proponer alternativas para mejorar la experiencia sin comprometer la seguridad.]
  fondos y mostrar los costos antes de confirmar las transacciones. Con estas mejoras se aumenta
  la confianza del usuario, se reducen los errores y se mejora la experiencia de usuario.
 
-#### Rol D: Oficial de Ética y Fricción
-**Misión:** Cazar *Dark Patterns* y Fricción Negativa. 
+ 
+Rol D: Oficial de Ética y Fricción
 
-**Errores de cada pantalla:**
+Misión: Identificar prácticas engañosas (Dark Patterns) y problemas de fricción negativa que afecten la experiencia del usuario.
 
-- **Costos Ocultos (Pantalla 3: Confirmación de Compra)**
-  - **El Problema:** En la pantalla de confirmación, observamos un claro caso de *Drip Pricing* (Precios por Goteo) y Costos Ocultos.
-  - **La trampa matemática:** El usuario está comprando 0.05 BTC a un precio de $28,500. El costo base del activo es de $1,425 (0.05 x 28,500). Sin embargo, el "Total a Pagar" exige $1,567.25.
-  - **La falta de transparencia:** Hay un sobrecosto de $142.25 (casi un 10% del valor de la transacción) que se agrupa bajo una línea de texto gris, pequeña y sin desglosar que dice: + Tasa de Red y Comisión de Servicio.
-  - **Impacto ético:** El usuario se entera del costo real justo en el último segundo, aprovechando la fatiga de la decisión para forzar una transacción desproporcionadamente cara. Esto es inaceptable para una plataforma financiera formal.
+Errores de cada pantalla
+Costos No Transparentes (Pantalla 3: Confirmación de Compra)
 
-- **Confirmshaming y Fricción Negativa (Pantalla 5: Notificación Alarmista)**
-  - **El Problema:** Esta pantalla es un compendio de manipulación emocional diseñado para forzar operaciones (y por ende, cobrar comisiones).
-  - **Alarmismo (Fear-mongering):** El título en rojo "¡EL MERCADO SE DESPLOMA!" y el subtítulo "Vende ahora o piérdelo todo" generan pánico irracional. En el mundo de las inversiones, las caídas son normales; inducir al pánico provoca que el usuario tome decisiones financieras perjudiciales basadas en el miedo.
-  - **Confirmshaming:** Al intentar descartar la acción, la única opción para no vender es un botón que obliga al usuario a aceptar una premisa humillante y aterradora: "No, prefiero perder mis ahorros".
-  - **Impacto ético:** Se está castigando psicológicamente al usuario por no realizar la acción que la empresa desea. Esta práctica destruye la percepción de Safe-Wallet como una herramienta "profesional" y la acerca al terreno de las estafas.
+El problema:
+En la pantalla de confirmación de compra se identifica un patrón oscuro conocido como Precios Ocultos o Hidden Costs. El usuario ve inicialmente un precio del activo, pero al momento de confirmar aparece un valor total mucho mayor sin una explicación clara.
 
-**Soluciones para cada pantalla:**
+La inconsistencia en el precio:
+El usuario intenta comprar 0.05 BTC a un valor unitario de $28,500, lo que equivale a un costo base de $1,425. Sin embargo, el total a pagar mostrado es de $1,567.25, lo que genera una diferencia considerable en el precio final.
 
-- **A. En la Confirmación de Compra (Solución a Pantalla 3):**
-  - **Desglose Obligatorio:** Antes de habilitar el botón de compra, el usuario debe ver un recibo detallado: Monto en BTC + Comisión de Safe-Wallet + Tasa de Red (Minero).
-  - **Fricción Positiva:** Reemplazar el botón de un solo toque ("Confirmar Compra") por un mecanismo de confirmación activa, como un "Deslizar para Comprar" (*Swipe to Buy*) o requerir el PIN/Biometría después de mostrar el recibo transparente. Esto asegura que el usuario no compre por accidente y esté 100% consciente del costo final.
+Falta de claridad:
+El sistema muestra un cargo adicional bajo un texto pequeño que agrupa varios costos como comisiones y tasas de red sin explicar cuánto corresponde a cada uno. Esto genera confusión y hace que el usuario no entienda realmente por qué está pagando más dinero.
 
-- **B. En Situaciones de Alta Volatilidad (Solución a Pantalla 5):**
-  - **Alertas Neutrales:** Cambiar el UX Writing por un lenguaje informativo: "El valor de BTC ha bajado un X% en la última hora. Revisa el mercado".
-  - **Fricción Positiva en Ventas de Pánico:** Si el usuario decide vender durante una caída abrupta, implementar un modal de advertencia neutro (*Cooling-off prompt*): "Estás a punto de liquidar tus activos durante un periodo de alta volatilidad. ¿Deseas proceder con la venta de 0.05 BTC?".
-  - ### 3. Entregable de Fase 1.
+Impacto ético:
+Este tipo de diseño afecta la confianza del usuario, ya que parece que la plataforma oculta información importante hasta el último paso de la compra, lo que puede obligar al usuario a aceptar la transacción después de haber invertido tiempo en el proceso.
 
-### Tabla de diagnóstico
+Manipulación Emocional y Presión al Usuario (Pantalla 5: Alerta del Mercado)
 
-| Aspecto | Diagnóstico | Oportunidad de mejora |
-|---|---|---|
-| Costos ocultos y retiro de fondos ocultos. | Es el problema más grave porque genera desconfianza en el usuario al ocultar cobros y dificultar el acceso a su dinero. | Mostrar desde el inicio el desglose completo de costos y ubicar la opción de retirar fondos de forma visible, directa y accesible. |
+El problema:
+En esta pantalla se utilizan mensajes alarmantes para presionar al usuario a vender sus activos rápidamente. Este tipo de diseño se considera manipulación emocional porque induce miedo para provocar una acción inmediata.
 
----
+Lenguaje alarmista:
+Mensajes como “El mercado está cayendo” o “Vende ahora” generan presión psicológica en el usuario, haciendo que tome decisiones impulsivas sin analizar la situación.
+
+Opciones de decisión mal diseñadas:
+La opción para cancelar la venta presenta un mensaje negativo o exagerado, lo que hace que el usuario se sienta culpable por no realizar la acción que la plataforma quiere.
+
+Impacto ético:
+Esto afecta la ética del sistema porque la aplicación no está ayudando al usuario a tomar decisiones informadas, sino que lo está presionando para generar más transacciones y comisiones.
+
+Soluciones para cada pantalla
+A. Solución para la Confirmación de Compra (Pantalla 3)
+
+Mostrar costos detallados:
+Antes de confirmar la compra, la aplicación debe mostrar un resumen completo con:
+
+Precio del activo
+Comisión de la plataforma
+Tasa de red
+Total a pagar
+
+Confirmación segura:
+Se puede implementar un sistema de confirmación adicional como:
+
+Ingresar PIN
+Confirmación con huella
+Deslizar para confirmar la compra
+
+Esto ayuda a evitar compras accidentales y mejora la transparencia del proceso.
+
+B. Solución para Alertas del Mercado (Pantalla 5)
+
+Mensajes informativos y neutrales:
+En lugar de mensajes alarmistas, la aplicación debería mostrar información objetiva como:
+“El valor de la criptomoneda ha disminuido en las últimas horas. Revisa el mercado antes de tomar una decisión.”
+
+Confirmación antes de vender:
+Si el usuario decide vender durante una caída del mercado, el sistema debería mostrar un mensaje como:
+“Estás a punto de vender tus activos durante una caída del mercado. ¿Deseas continuar con la operación?”
+
+Esto ayuda a que el usuario piense antes de tomar una decisión apresurada.
+
+Entregable Fase 1 – Tabla de diagnóstico
+Aspecto	Diagnóstico	Oportunidad de mejora
+Falta de transparencia en costos y presión para vender activos.	La aplicación muestra costos adicionales al final del proceso y utiliza mensajes alarmantes para presionar decisiones del usuario.	Mostrar desde el inicio todos los costos detallados y utilizar mensajes informativos en lugar de alarmistas para mejorar la confianza del usuario.
 
 ## Fase 2: Re-Arquitectura y User Flow en Lucidchart
 
