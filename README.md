@@ -22,14 +22,21 @@ proponer alternativas para mejorar la experiencia sin comprometer la seguridad.
   - Conexión con servidores de autenticación: Puede haber retrasos o fallos en la comunicación, el sistema asume que el usuario está intentando entrar de forma fraudulenta, cuando en realidad el problema puede ser técnico, por eso bloquear la cuenta automáticamente por 24 horas genera frustración y pérdida de confianza.
 
 #### Rol B: Analista de Psicología UX
-**Misión:** [Escribe aquí la misión principal del rol]
-- **Errores encontrados:**
-  - [Describe el error 1]
-  - [Describe el error 2]
-- **Soluciones propuestas:**
-  - [Describe la solución 1]
-  - [Describe la solución 2]
-
+*Misión:* [Detectar la carga cognitiva y el impacto emocional en los usuarios de la app Safe-Wallet.]
+-Analisis (Pantalla 2: Trading Saturado)
+- *Errores encontrados:*
+  - El problema: La pantalla de trading de Safe-Wallet presenta demasiada información al mismo tiempo, lo que genera sobrecarga cognitiva en el usuario. Esto dificulta que pueda concentrarse en la decisión principal que es comprar o vender una criptomoneda.
+ - En esta pantalla aparecen gráficos en tiempo real, una lista de aproximadamente 50 criptomonedas, noticias que cambian constantemente y un chat de usuarios activo.
+ - No existe una organización clara de la información. Todos los elementos parecen tener la misma importancia, por lo que el usuario no sabe en qué debe fijarse primero.
+ - Los botones de “Comprar” y “Vender” tienen el mismo color gris, lo que puede provocar que el usuario realice una acción equivocada al operar.
+ - Estrés en la toma de decisiones.
+- *Soluciones propuestas:*
+  - B.Trading Saturado(Solución a pantalla 2)
+  - Se debe dividir la pantalla en secciones o usar pestañas para evitar mostrar todo al mismo tiempo.
+  -  Los elementos más importantes, como el precio y el gráfico, deben ser más grandes y llamativos. La información secundaria debe tener menor tamaño o protagonismo. Además, usar espacios ayuda a ordenar mejor la pantalla.
+  -  Los botones de “Comprar” y “Vender” deben tener colores distintos (verde y rojo) y un diseño claro. También se debe incluir una confirmación antes de realizar la operación.
+  -  Se deben limitar las actualizaciones constantes, reducir animaciones innecesarias y evitar mensajes alarmistas. En su lugar, usar un lenguaje más calmado y claro.
+  -  Permitir que el usuario configure la pantalla según sus preferencias (ocultar chat, elegir criptomonedas, etc.).
 #### Rol C: Especialista en UI y Jerarquía
 **Misión:** [Escribe aquí la misión principal del rol]
 - **Errores encontrados:**
@@ -83,9 +90,9 @@ proponer alternativas para mejorar la experiencia sin comprometer la seguridad.
 ### 2. Tareas por Rol en esta Fase
 
 - **Estudiante 1 (Ecosistema):** [🔗 Ver esquema en Lucidchart](https://lucid.app/lucidchart/da588949-1c3d-4186-a9bd-8210c2cc15de/edit?viewport_loc=185%2C339%2C3365%2C1544%2C0_0&invitationId=inv_22fbdec7-51fd-4de8-898b-f2f654a693df)
-- **Estudiante 2 (Arquitecto de Información):** [🔗 Pegar enlace aquí](#)
-- **Estudiante 3 (UX Writer):** [🔗 Pegar enlace aquí](#)
-- **Estudiante 4 (Validador de Usabilidad):** [🔗 Pegar enlace aquí](#)
+- **Estudiante 2 (Arquitecto de Información):** [🔗 Pegar enlace aquí](https://lucid.app/lucidspark/6fe8af27-5430-4b27-afa2-3e7909924895/edit?viewport_loc=-537%2C-3738%2C3876%2C6986%2C0_0&invitationId=inv_4de863c7-cbb4-4901-bb19-78fe46d7b8f3)(#)
+- **Estudiante 3 (UX Writer):** [🔗 Pegar enlace aquí](https://lucid.app/lucidchart/1662a9b9-232a-42b5-9f1b-b2abcac9e33a/edit?viewport_loc=-1040%2C-178%2C4401%2C2108%2C0_0&invitationId=inv_94d9f117-8443-4248-906a-9fb3101d1ffc)(#)
+- **Estudiante 4 (Validador de Usabilidad):** [🔗 Pegar enlace aquí](https://lucid.app/lucidchart/407baf6f-ec61-43fa-b211-7569cd841190/edit?viewport_loc=-183%2C-229%2C3573%2C1974%2C0_0&invitationId=inv_953876ba-2816-4626-a0cb-f8a402e93494)(#)
 
 ---
 ### 3. Entregable de Fase 2
