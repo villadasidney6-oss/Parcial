@@ -85,7 +85,7 @@ proponer alternativas para mejorar la experiencia sin comprometer la seguridad.
 - **Estudiante 1 (Ecosistema):** [🔗 Ver esquema en Lucidchart](https://lucid.app/lucidchart/da588949-1c3d-4186-a9bd-8210c2cc15de/edit?viewport_loc=185%2C339%2C3365%2C1544%2C0_0&invitationId=inv_22fbdec7-51fd-4de8-898b-f2f654a693df)
 - **Estudiante 2 (Arquitecto de Información):** [🔗 Pegar enlace aquí](#)
 - **Estudiante 3 (UX Writer):** [🔗 Pegar enlace aquí](#)
-- **Estudiante 4 (Validador de Usabilidad):** [🔗 Pegar enlace aquí](#)
+- **Estudiante 4 (Validador de Usabilidad):** https://lucid.app/lucidchart/407baf6f-ec61-43fa-b211-7569cd841190/edit?viewport_loc=-183%2C-229%2C3573%2C1974%2C0_0&invitationId=inv_953876ba-2816-4626-a0cb-f8a402e93494
 
 ---
 ### 3. Entregable de Fase 2
